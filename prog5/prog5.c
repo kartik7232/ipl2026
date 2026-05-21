@@ -78,3 +78,9 @@ void make_decision(union decision *d){
         )
     );
 }
+
+void print_decision(union decision d){
+    printf("Your choice: %s\n", d.bits.your_choice ? "YES" : "NO");
+    printf("Your mother choice: %s\n", d.bits.your_mothers_choice ? "YES":"NO");
+
+}
